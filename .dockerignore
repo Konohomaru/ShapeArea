@@ -1,0 +1,12 @@
+# Build artefacts
+bin/
+obj/
+
+# IDE rtefacts
+.idea/
+
+# Other not necessary files
+Dockerfile/
+.gitignore
+.makefile
+README.md
