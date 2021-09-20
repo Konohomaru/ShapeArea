@@ -42,3 +42,12 @@ SELECT
 FROM [Products] AS [P] WITH(NOLOCK)
 LEFT JOIN [ProductCategories] AS [PC] WITH(NOLOCK) ON [PC].[ProductName] = [P].[Name]
 ```
+
+Выборка, написанная в запросе выше, вернёт данные, которые представлены в таблице ниже
+
+№ | Product | Category
+--- | --- | ---
+1 | Milk | Groceries
+2 | Milk | Liquid
+3 | Bread | Groceries
+4 | BRASS. Bermingem | NULL
