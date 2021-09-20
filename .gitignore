@@ -4,3 +4,6 @@ obj/
 
 # IDE folders & files
 .idea/
+
+# User-specific files
+*.user 
