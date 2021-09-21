@@ -20,15 +20,13 @@ namespace ShapeAreaTests
             new object[] { 1_000_000 }
         };
 
-        [Theory]
-        [MemberData(nameof(InvalidRadii))]
+        [Theory, MemberData(nameof(InvalidRadii))]
         public void ThrowExceptionIfInvalidRadius(double radius)
         {
             Throws<ArgumentException>(() => new Circle(radius));
         }
 
-        [Theory]
-        [MemberData(nameof(ValidRadii))]
+        [Theory, MemberData(nameof(ValidRadii))]
         public void CreateInstanceIfValidRadius(double radius)
         {
             var circle = new Circle(radius);

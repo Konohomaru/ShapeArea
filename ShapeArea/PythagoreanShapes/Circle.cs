@@ -9,9 +9,7 @@ namespace ShapeArea
 
         public Circle(double radius)
         {
-            if (radius <= 0) throw new ArgumentException(
-                "Radius must be greater 0",
-                nameof(radius));
+            if (radius <= 0) throw new ArgumentException("Radius must be greater 0", nameof(radius));
             
             Radius = radius;
         }
